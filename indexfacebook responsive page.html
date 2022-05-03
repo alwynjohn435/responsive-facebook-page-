@@ -1,0 +1,568 @@
+<!Doctype html>
+<html>
+<head>
+
+
+<title>Facebook-log in or sign up</title>
+<meta charset="UTF-8">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel ="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/800px-2021_Facebook_icon.svg.png">
+</head>
+
+
+
+<style>
+
+
+
+body{
+background-color:rgb(220,220,220);
+
+}
+.header{
+margin-left:20px;
+margin-top:60px;
+}
+
+
+
+
+
+.container h2{
+position:absolute;
+top:38%;
+left:17%;
+ font-family:sans-serif;
+font-weight:lighter;
+font-stretch:500%;
+width:500px;
+
+font-size:28px;
+line-height:28px;
+max-width:80%;
+}
+
+
+
+
+
+.container{
+display:flex;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+
+
+
+
+ .form{
+margin-left:30%;
+margin-top:10%;
+background-color:white;
+padding:10px 15px;
+height:350px;
+width:400px;
+background-color:white;
+box-shadow:5px 5px 5px lightgrey;
+max-width:80%;
+border-top-right-radius:8px;
+border-top-left-radius:8px;
+border-bottom-right-radius:8px;
+border-bottom-left-radius:8px;
+}
+
+
+
+
+
+
+
+.text{
+border-color:lightgrey;
+width:370px;
+padding:12px 8px;
+margin-top:10px;
+border-width:1px;
+
+border-top-right-radius:5px;
+border-top-left-radius:5px;
+border-bottom-right-radius:5px;
+border-bottom-left-radius:5px;
+}
+.password{
+border-color:lightgrey;
+border-width:1px;
+border-top-right-radius:5px;
+border-top-left-radius:5px;
+border-bottom-right-radius:5px;
+border-bottom-left-radius:5px;
+margin-top:10px;
+width:370px;
+padding:12px 8px;
+
+}
+
+.btn{
+
+border-width:1px;
+border-color:lightgrey;
+border-top-right-radius:5px;
+border-top-left-radius:5px;
+border-bottom-right-radius:5px;
+border-bottom-left-radius:5px;
+margin-top:16px;
+margin-left:1px;
+width:370px;
+padding:10px 8px;
+font-family:sans-serif;
+font-size:18px;
+font-weight:bolder;
+
+}
+
+
+.btn:hover{
+cursor:pointer;
+}
+
+
+.forgoten{
+
+padding-top:15px;
+padding-left:120px;
+font-family:sans-serif;
+font-size:15px;
+font-weight:lighter;
+
+
+}
+
+
+a{
+text-decoration:none;
+}
+
+a:hover{
+text-decoration:underline;
+}
+
+
+
+
+
+p{
+padding-top:60px;
+padding-left:30px;
+font-family:sans-serif;
+font-size:15px;
+width:500px;
+}
+
+.create{
+font-family:sans-serif;
+font-weight:bolder;
+font-size:14px;
+}
+
+.create:hover {
+text-decoration:underline;
+cursor:pointer;
+}
+
+
+
+
+.aaa{
+float:left;
+}
+
+
+
+.signup{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-60%,-50%);
+background-color:white;
+width:440px;
+height:500px;
+max-width:90%;
+
+}
+
+
+.signup-header{
+padding:10px 15px;
+display:flex;
+justify-content:space-between;
+border-bottom:1px solid lightgrey;
+}
+
+
+.closebutton{
+background:none;
+outline:none;
+border:none;
+}
+
+
+.signupcontent{
+padding:20px 20px;
+}
+
+.input1{
+padding:8px 5px;
+border:1px solid lightgrey;
+padding-right:8px;
+}
+
+
+.input2{
+padding:8px 5px;
+border:1px solid lightgrey;
+margin-left:200px;
+margin-top:-500px;
+
+}
+
+.input3{
+padding:10px 15px;
+border:1px solid lightgrey;
+margin-top:10px;
+width:375px;
+}
+
+.input4{
+padding:10px 15px;
+border:1px solid lightgrey;
+margin-top:10px;
+width:375px;
+}
+
+
+.date{
+padding:5px 1px;
+font-size:12px;
+}
+
+
+
+.date1{
+width:120px;
+padding:8px 5px;
+border:1px solid lightgrey;
+margin-bottom:-15px;
+
+}
+
+.month{
+width:120px;
+padding:8px 5px;
+border:1px solid lightgrey;
+margin-left:10px;
+}
+
+.year{
+width:120px;
+padding:8px 5px;
+border:1px solid lightgrey;
+margin-left:10px;
+}
+
+
+.gender{
+
+padding:1px 1px;
+font-size:12px;
+
+}
+
+.gender1{
+display:flex;
+justify-content:space-between;
+margin-top:-70px;
+margin-right:-6px;
+margin-left:-30px;
+margin-bottom:-6px;
+width:411px;
+}
+
+.formsignup{
+width:200px;
+height:40px;
+padding-top:10px;
+margin-top:-10px;
+}
+
+.signup{
+display:none;
+}
+
+
+.signup1{
+font-size:30px;
+font-family:sans-serif;
+font-weight:bolder;
+}
+
+
+.signupnew{
+width:200px;
+padding:5px 15px;
+margin-top:-10px;
+margin-left:100px;
+}
+
+
+
+
+
+
+
+.loginbutton{
+width:360px;
+}
+
+
+
+.createaccbutton{
+width:200px;
+margin-left:80px;
+margin-top:25px;
+padding:10px 12px;
+font-size:16px;
+}
+
+
+
+
+@media only screen and (max-width:500px){
+
+.container .header{
+width:100%;
+
+padding-left:60px;
+margin-top:-100px;
+}
+}
+
+
+@media only screen and (max-width:500px){
+.container .hhh{
+width:100%;
+margin-top:-150px;
+margin-left:-30px;
+padding:5px 10px;
+font-size:23px;
+}
+}
+
+
+@media only screen and (max-width:500px){
+.container .form{
+width:100%;
+margin-top:4px;
+margin-left:40px;
+}
+}
+
+@media only screen and (max-width:500px){
+.container .form .text{
+width:100%;
+padding-left:10px;
+}
+}
+
+@media only screen and (max-width:500px){
+.container .form .password{
+width:100%;
+padding-left:10px;
+}
+}
+
+
+@media only screen and (max-width:500px){
+.container .form .loginbutton{
+width:100%;
+padding-left:10px;
+}
+}
+
+
+
+
+
+
+@media only screen and (max-width:500px){
+.signup{
+width:100%;
+margin-left:45px;
+margin-top:50px;
+}
+}
+
+</style>
+
+
+
+
+
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<div class=container>
+	<div class=header>	
+	
+		<img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" height=300px width=300px>
+	 
+	</div>
+		
+
+     <h2 class=hhh>Facebook helps you connect and share
+	 with the people in your life.</h2>
+
+
+
+		<div class=form>
+			<input type=text placeholder="Email address or phone number" class=text>
+			<input type=password placeholder=Password class=password>
+			<button type="button" class="btn btn-primary btn-sm btn-block loginbutton">Log In</button>
+			<h3 class=forgoten><a href=#>Forgotten password?</a></h3>
+			<hr size=1px color="lightgrey">
+			
+			<button type="button" class="btn btn-success btn-sm btn-block createaccbutton" id=create1>Create New Account</button>
+
+			<p><span class=create>Create a page</span> for a celebrity brand or business.</p>
+		</div>
+
+
+
+
+</div>
+     
+
+
+
+
+	<div class=signup id=sss>
+	
+		<div class=signup-header>
+		<div><span class=signup1>Sign&nbsp;Up</span><br>Its quick and easy</div>
+		
+		<h4 class=closebutton id=close >&times;</h4>
+		
+		
+		</div>
+		
+	<div class=signupcontent>
+		<input type=text  placeholder=Firstname  class=input1 >
+		<input type=text  placeholder=Surname  class=input2 >
+		<input type=text placeholder="Mobile number or email address"  class=input3 >
+	
+		<input type=password placeholder="New password" class=input4 required>
+	
+	<p class=date>Date of birth</p>
+	<select class=date1>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option>
+		<option>13</option>
+	</select>
+	
+	<select class=month>
+		<option>Jan</option>
+		<option>Feb</option>
+		<option>Mar</option>
+		<option>Apr</option>
+		<option>May</option>
+		<option>June</option>
+		<option>July</option>
+		<option>Aug</option>
+		<option>Sep</option>
+		<option>Oct</option>
+		<option>Nov</option>
+		<option>Dec</option>
+	
+	</select>
+	
+	
+	<select class=year>
+		<option>2022</option>
+		<option>2021</option>
+		<option>2020</option>
+		<option>2019</option>
+		<option>2018</option>
+		<option>2017</option>
+		<option>2016</option>
+		<option>2015</option>
+		<option>2014</option>
+		<option>2013</option>
+		<option>2012</option>
+		<option>2011</option>
+		<option>2010</option>
+	</select>
+	
+	<p class=gender>gender</p>
+		<div class=gender1>
+			<p>Female<input type=radio name=gg1></p>
+			<p>Male<input type=radio name=gg1></p>
+			<p>Custom<input type=radio name=gg1></p>
+		</div>
+	
+	<button type="button" class="btn btn-success btn-sm btn-block signupnew">Sign up</button>
+	</div>
+	
+
+
+
+</div>
+
+
+
+
+
+
+
+<script>
+
+$(document).ready(function(){
+
+$("#create1").click(function(){
+$("#sss").fadeIn();
+
+})
+
+$("#close").click(function(){
+$("#sss").fadeOut();
+
+})
+
+
+})
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
